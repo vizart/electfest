@@ -42,9 +42,6 @@ nav {
     width: 40%;
     margin: 0;
 }
-.nav-links li {
-  
-}
 
 .nav-links li a {
     color: #FFF;
@@ -109,22 +106,89 @@ nav {
   width: 100%;
 }
 /* HOMEPAGE */
+#icons {
+  padding-bottom: 30px;
+}
+#icons p {
+  margin-top: 20px;
+  text-align: justify;
+}
 #icons i {
   width: 100%;
   text-align: center;
   font-size: 100px;
-  background: #6a3093;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+}
+.gradient {
+  background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#age-restriction {
+  width: 100%;
+  text-align: center;
+  top: -10px;
+}
+#age-restriction i{
+  color: #DC281E;
+  opacity: 0.6;
+}
+
+#age-restriction strong{
+  font-size: 48px;
+  margin-top: 1px;
+  padding-right: 5px;
+}
+#parallax-pattern {
+  height: 350px;
+  width: 100%;
+  background-image: url("../source/pattern.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}
+#info-panels img[src*="campsite.jpg"] {
+  border-top-left-radius: 20%;
+}
+#info-panels img[src$="drinksfood.jpg"] {
+  border-bottom-right-radius: 15%;
+}
+#parallax-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,0,0,0),rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 1));
+}
+#info-panels {
+  margin: 20px 0;
+}
+#info-panels div[class="row"] {
+  padding-bottom: 20px;
+}
+.img-panel{
+  width: 100%;
+}
+.text-panel:first-of-type {
+  text-align: right;
+}
 /* MEDIA QUERIES */
+@media screen and (max-width:720px){
+  .text-panel p, h1{
+    text-align: center;
+  }
+  #info-panels div.row {
+    display: flex;
+    flex-flow: column;
+  }
+  #info-panels > div > div:nth-child(2) > div.col-7.text-panel {
+    order: 2;
+  }
+  #info-panels > div > div:nth-child(2) > div.col-5 {
+    order: 1;
+  }
+}
 @media screen and (max-width:1200px){
-    .nav-links {
-        width: 50%;
+  .nav-links {
+    width: 50%;
     }
 }
 @media screen and (max-width:768px){
