@@ -16,9 +16,6 @@
     <!-- Main Content -->
     <div id="content">
         <div class="carousel">
-            <div class="label">
-                <h3>SAMPLE TEXT</h3>
-            </div>
             <div class="slide">
                 <img src="source/festival3.jpg" alt="">
             </div>
@@ -66,8 +63,12 @@
                 </div>
                 <div class="row">
                     <div class="col-7 text-panel">
-                        <h1>🍔 FOOD & 🍻 DRINKS</h1>
-                        <p>With our hand picked food and variety of drinks in a thoughtfully designed and decorated festival area. We very much emphasise the equality of all people and want to create a festival with a great open-minded community spirit so that everyone can have a great time.</p>     
+                        <div class="aligner">
+                            <div class="aligner-item">
+                                <h1>🍔 FOOD & 🍻 DRINKS</h1>
+                                <p>With our hand picked food and variety of drinks in a thoughtfully designed and decorated festival area. We very much emphasise the equality of all people and want to create a festival with a great open-minded community spirit so that everyone can have a great time.</p> 
+                            </div>
+                        </div>    
                     </div>
                     <div class="col-5">
                         <img class="img-panel" src="../source/drinksfood.jpg" alt="">
