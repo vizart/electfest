@@ -42,13 +42,15 @@ nav {
     padding-top: 20px;
 }
 .nav-links li {
-  margin: 0 25px;
+  margin: 0 15px;
 }
 .nav-links li a {
     color: #FFF;
     text-decoration: none;
-    padding: 6px 10px;
-    font-size: 1.5rem;
+    padding: 6px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #DC281E;
+    border-radius: 50px;
 }
 .nav-links li img {
   width: 200px;
@@ -71,46 +73,34 @@ nav {
   position: relative;
 }
 /* IMAGE CAROUSEL */
-.carousel {
+.carouselWrapper {
+  overflow: hidden;
   width: 100%;
   max-height: 110vh;
   overflow: hidden;
   position: relative;
-  text-align: center;
   clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 5vw),
-    0 100%
+  0 0,
+  100% 0,
+  100% calc(100% - 5vw),
+  0 100%
   );
 }
-
-.label {
-  position: absolute;
-  z-index: 1;
-  top: 100px;
-  padding: 5px 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+.carousel {
+  width: 300%;
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  overflow: hidden;
+  max-height: 110vh;
 }
-
-.label h3{
-  color: #FAFAFA;
-}
-.label p{
-  color: #FAFAFA;
-  line-height: 20px;
-}
-
 .slide {
-  animation: slideSide 0.5s ease-in;
+  float: left;
+  width: 100vw
 }
-
-.slideDown {
-  animation: slideDown 0.5s ease-out;
-}
-
 .slide img{
   width: 100%;
+}
+.slideDown {
+  animation: slideDown 0.5s ease-out;
 }
 .static-img{
   width: 100%;
