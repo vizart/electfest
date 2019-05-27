@@ -15,15 +15,11 @@
     <?php include 'includes/navbar.php';?>
     <!-- Main Content -->
     <div id="content">
-        <div class="carousel">
-            <div class="slide">
-                <img src="source/festival3.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="source/festival2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="source/festival1.jpg" alt="">
+        <div class="carouselWrapper">
+            <div class="carousel">
+                <div class="slide"><img src="source/festival1.jpg" alt=""></div>
+                <div class="slide"><img src="source/festival2.jpg" alt=""></div>       
+                <div class="slide"><img src="source/festival3.jpg" alt=""></div>
             </div>
         </div>
         <div class="container">

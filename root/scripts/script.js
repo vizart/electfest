@@ -1,3 +1,4 @@
+// NAVBAR MOBILE BURGER MENU FUNCTION
 const navSlide = () => {
      const burger = document.querySelector('.burger');
      const nav = document.querySelector('.nav-links');
@@ -15,22 +16,35 @@ const navSlide = () => {
           })
      })
 }
+
+// IMAGE CAROUSEL FUNCTION
 var slideIndex = 0;
-function carousel() {
-     var x = document.getElementsByClassName("slide");
-     for (var i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-     }
-     slideIndex++;
-     if (slideIndex > x.length) { slideIndex = 1 }
-     x[slideIndex - 1].style.display = "block";
-     setTimeout(carousel, 7000); // Change image every 7 seconds
+var slides = document.getElementsByClassName("slide");
+var carousel = document.getElementsByClassName("carousel")[0];
+function changeSlide() {
+        if(slideIndex == slides.length){
+                carousel.style.transform = "translateX(0)";
+                slideIndex = 1;
+        }
+        else if(slideIndex == 0){
+                slideIndex++;
+        }
+        else{
+                carousel.style.transform = `translateX(-${slideIndex * 100/3}%)`;
+                slideIndex++;
+        }
+        setTimeout(changeSlide, 5000);
 }
+
+// NAVBAR STYLING FUNCTION
 function navStyle() {
 var el = document.getElementById("navigation");
 var logo = document.getElementsByClassName("nav-logo")[0];
 var liLogo = document.querySelector("#navigation > nav > ul > li:nth-child(2)");
 var navLinks = document.querySelector(".nav-links");
+     if(el.style.background == "#333"){
+          el.style.boxShadow = "0 2px 4px rgba(0,0,0,0.5)"
+     }
      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           el.classList.add("slideDown");
           el.style.position = "fixed";
@@ -58,7 +72,15 @@ var navLinks = document.querySelector(".nav-links");
           }
      }
 }
+
+// CALLING ALL FUNCTIONS
 navSlide();
-carousel();
+changeSlide();
 window.onscroll = function() {navStyle()};
 window.onresize = function() {navStyle()};
+window.onload = function(){
+     var el = document.getElementById("navigation");
+     if(el.style.background == "#333"){
+          el.style.boxShadow = "0 2px 4px rgba(0,0,0,.5)"
+     }
+};
