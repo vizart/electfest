@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+  /* WINDOWS SLIDESHOW FIXES */
+  overflow: auto;
+  overflow: overlay;
+}
 /* NAV BAR */
 #navigation {
     z-index: 2;
@@ -71,6 +76,7 @@ nav {
 /* MAIN CONTENT*/
 #content {
   position: relative;
+  overflow: hidden;
 }
 /* IMAGE CAROUSEL */
 .carouselWrapper {

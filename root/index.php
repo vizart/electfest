@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- Nav Bar -->
+    <div id="content">
     <?php include 'includes/navbar.php';?>
     <!-- Main Content -->
-    <div id="content">
         <div class="carouselWrapper">
             <div class="carousel">
                 <div class="slide"><img src="source/festival1.jpg" alt=""></div>
