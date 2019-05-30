@@ -1,0 +1,71 @@
+body {
+        background: url("../source/pattern5.png");
+}
+
+#full-form {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+}
+
+#navigation {
+        background: #222;
+}
+
+.nav-logo {
+        display: block;
+}
+
+#navigation>nav>ul>li:nth-child(2) {
+        display: none;
+}
+
+.nav-links {
+        padding: 0;
+}
+
+.nav-links {
+        justify-content: flex-end;
+}
+
+.formWrapper {
+        padding: 40px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 20px;
+}
+
+.formWrapper h1 {
+        color: #222;
+        margin: 0;
+}
+
+.formWrapper .pure-control-group input {
+        width: 100%;
+}
+
+.formWrapper .pure-group input {
+        width: 100%;
+}
+.formWrapper .pure-controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+}
+.formWrapper p {
+        font-size: 1rem;
+        text-align: center;
+        font-style: italic;
+}
+.formWrapper .pure-controls button {
+        margin-top: 10px;
+        width: 100px;
+}
+
+@media screen and (max-width:768px) {
+        .nav-links {
+                justify-content: space-around;
+        }
+}
