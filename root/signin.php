@@ -33,7 +33,7 @@
                                 </div>
                                 <p>Haven't signed up yet? Do it <a href="signup.php">here.</a></p>
                                 <div class="pure-controls">
-                                    <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
+                                    <button type="submit" class="pure-button pure-button-primary">Sign In</button>
                                 </div>
                             </fieldset>
                         </form>

@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/grid.css">
     <link rel="stylesheet" href="styles/tickets.css">
+    <link rel="stylesheet" href="styles/overlay.css">
 </head>
 
 <body>
     <div id="content">
         <!-- Nav Bar -->
         <?php include 'includes/navbar.php'; ?>
+        <?php include 'includes/overlay.php'; ?>
         <!-- Main Content -->
         <header>
             <div class="container text-overlay">
@@ -32,7 +34,7 @@
                     <p>If you want to visit ElectFest for a day, order this ticket. A day full of adventure with top artists, big shows and fireworks! This ticket has everything included in order for you to have a fun time at ElectFest 2019!</p>
                 </div>
                 <div class="buy-ticket">
-                    <a href="#"><h2>BUY TICKET 100€</h2></a>
+                    <h2>BUY TICKET 100€</h2>
                 </div>
             </div>
             <div class="ticket">
@@ -41,13 +43,14 @@
                     <p>Too tired and in a desprate need of a nap - this ticket includes a campsite spot, so you can pitch up your tent, take a nap or kick it with your friends. A day full of adventure with top artists, big shows and fireworks!</p>
                 </div>
                 <div class="buy-ticket">
-                    <a href="#"><h2>BUY TICKET 150€</h2></a>
+                    <h2>BUY TICKET 150€</h2>
                 </div>
             </div>
         </div>
     </div>
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/ticketpage.js"></script>
 </body>
 
 </html>
