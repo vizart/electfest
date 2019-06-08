@@ -25,24 +25,22 @@
                                         <div class="col-3"></div>
                                         <div class="col-6 formWrapper">
                                                 <h1>Sign Up</h1>
-                                                <form class="pure-form pure-form-aligned">
+                                                <form class="pure-form pure-form-aligned" action="includes/signup.inc.php" method="post">
                                                         <fieldset>
                                                                 <div class="pure-control-group">
-                                                                        <input id="email" type="email" placeholder="Email Address">
-                                                                        <!-- Can echo element below when input not filled -->
-                                                                        <!-- <span class="pure-form-message-inline">This is a required field.</span> -->
+                                                                        <input id="email" type="email" placeholder="Email Address" name="mail" required>
                                                                 </div>
                                                                 <div class="pure-control-group">
-                                                                        <input id="password" type="password" placeholder="Password">
+                                                                        <input id="password" type="password" placeholder="Password" name="pwd" required>
                                                                 </div>
                                                                 <div class="pure-control-group">
-                                                                        <input id="confirmPassword" type="password" placeholder="Confirm Password">
+                                                                        <input id="confirmPassword" type="password" placeholder="Confirm Password" name="pwd-repeat" required>
                                                                 </div>
                                                                 <div class="pure-controls">
                                                                         <label for="cb" class="pure-checkbox">
-                                                                                <input id="cb" type="checkbox"> I've read the terms and conditions
+                                                                                <input id="cb" type="checkbox" required> I've read the terms and conditions
                                                                         </label>
-                                                                        <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
+                                                                        <button type="submit" class="pure-button pure-button-primary" name="signup-submit">Sign Up</button>
                                                                 </div>
                                                         </fieldset>
                                                 </form>

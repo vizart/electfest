@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
+$_SESSION['previous_location'] = 'tickets';
+setcookie("login_redirect", "tickets");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <title>Buy Tickets</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
@@ -51,6 +54,11 @@
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
     <script src="scripts/ticketpage.js"></script>
+    <?php
+        if(isset($_GET['error'])){
+            echo '<script>document.querySelector("#overlay").style.display = "flex";clickOutside();</script>';
+        }
+    ?>
 </body>
 
 </html>

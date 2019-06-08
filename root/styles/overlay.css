@@ -10,15 +10,13 @@
     align-items: center;
     display: none;
 }
-
-/* #login-form {
+.camp{
     display: none;
 }
 
-#ticket-form {
+.no-camp{
     display: none;
-} */
-
+}
 .form-names {
     display: flex;
     flex-direction: row;

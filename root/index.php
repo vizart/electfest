@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+setcookie("login_redirect", "");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-5">
-                        <img class="img-panel" src="../source/campsite.jpg" alt="">
+                        <img class="img-panel" src="source/campsite.jpg" alt="">
                     </div>
                     <div class="col-7 text-panel">
                         <h1>⛺ CAMPSITE</h1>
@@ -71,7 +73,7 @@
                         </div>
                     </div>
                     <div class="col-5">
-                        <img class="img-panel" src="../source/drinksfood.jpg" alt="">
+                        <img class="img-panel" src="source/drinksfood.jpg" alt="">
                     </div>
                 </div>
             </div>
