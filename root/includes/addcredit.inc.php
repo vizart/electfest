@@ -27,15 +27,15 @@ if(isset($_POST['addcredit-submit'])){
 
     $credit = $_POST['addcredit'];
 
-    if(empty($credit)){
-        header("Location: ../profile.php?error=emptyfield");
-        exit();
-    }
-    
-    else if(!preg_match("/^-?(?:\d+|\d*\.\d+)$/",$credit)){
+    if(!preg_match("/^-?(?:\d+|\d*\.\d+)$/",$credit)){
         header("Location: ../profile.php?error=invalidfield");
         exit();
     }
+    else if($credit < 10){
+        header("Location: ../profile.php?error=invalidfield2");
+        exit();
+    }
+    
 
     else{
 

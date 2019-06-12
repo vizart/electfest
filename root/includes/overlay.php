@@ -7,6 +7,9 @@
                     <legend>⚠️ Please sign in, in order to purchase a ticket!</legend>
                     <?php
                     if (isset($_GET['error'])) {
+                        if ($_GET['error'] == "nouser") {
+                            echo '<p style="color:red">Wrong email!</p>';
+                        }
                         if ($_GET['error'] == "wrongpassword") {
                             echo '<p style="color:red">Wrong password!</p>';
                         }
@@ -33,10 +36,10 @@
                     <fieldset>
                         <legend>🎟 Please fill in your details below, to purchase a ticket.</legend>
                         <?php if (isset($_GET['error'])) {
-                            if ($_GET['error'] == "invalidIBAN") {
+                            if ($_GET['error'] == "invalidIBAN" || $_GET['error'] == "invalidIBAN2" ) {
                                 echo '<p style="color:red">Please enter a valid IBAN!</p>';
                             }
-                        }?>
+                        } ?>
                         <div class="pure-control-group">
                             <div class="form-names">
                                 <input id="first-name" type="text" placeholder="First Name" name="firstname">
@@ -56,10 +59,19 @@
                     <fieldset>
                         <legend>🎟 Please fill in your details below, to purchase a ticket.</legend>
                         <?php if (isset($_GET['error'])) {
-                            if ($_GET['error'] == "invalidIBAN") {
+                            if ($_GET['error'] == "invalidIBAN" || $_GET['error'] == "invalidIBAN2" ) {
                                 echo '<p style="color:red">Please enter a valid IBAN!</p>';
                             }
-                        }?>
+                            if ($_GET['error'] == "invalidnames") {
+                                echo '<p style="color:red">Please valid names!</p>';
+                            }
+                            if ($_GET['error'] == "invalidfirstname") {
+                                echo '<p style="color:red">Your first name is invalid.</p>';
+                            }
+                            if ($_GET['error'] == "invalidlastname") {
+                                echo '<p style="color:red">Your last name is invalid.</p>';
+                            }
+                        } ?>
                         <div class="pure-control-group">
                             <div class="form-names">
                                 <input id="first-name" type="text" placeholder="First Name" name="firstname2">

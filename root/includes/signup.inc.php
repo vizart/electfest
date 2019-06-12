@@ -71,7 +71,7 @@
     
                             session_start();
                             $_SESSION['userId'] = $row['idUsers'];
-                            
+                            $_SESSION['currentMail'] = $email;
                             header("Location: ../index.php?signup=success");
                             exit();
 

@@ -16,11 +16,11 @@ function main() {
                 }
             }
             clickOutside();
-        })
+        });
     });
     if (window.location.href.indexOf("error=invalidIBAN2") > -1) {
         buttons[1].click();
-    } else if (window.location.href.indexOf("error=invalidIBAN") > -1){
+    } else if (window.location.href.indexOf("error=invalidIBAN") > -1) {
         buttons[0].click();
     }
     //I'm using "click" but it works with any event

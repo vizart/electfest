@@ -9,11 +9,13 @@ setcookie("login_redirect", "");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#222">
-    <title>Homepage</title>
+    <title>ElectFest | Home</title>
+    <link rel="shortcut icon" href="source/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
@@ -24,32 +26,32 @@ setcookie("login_redirect", "");
         <div class="carouselWrapper">
             <div class="carousel">
                 <div class="slide"><img src="source/festival1.jpg" alt=""></div>
-                <div class="slide"><img src="source/festival2.jpg" alt=""></div>
                 <div class="slide"><img src="source/festival3.jpg" alt=""></div>
+                <div class="slide"><img src="source/festival2.jpg" alt=""></div>
             </div>
         </div>
         <div class="container">
             <div id="icons" class="row">
                 <div class="col-4">
                     <i class="fas fa-map-marked-alt gradient"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet condimentum tortor. Sed consectetur, augue posuere tincidunt consequat, mauris arcu luctus mi, quis finibus erat tellus vehicula mauris. Integer ultrices lacinia aliquam. Integer eget orci maximus eros laoreet dictum. Etiam rhoncus porttitor leo. Praesent augue nulla, consectetur ac odio nec.</p>
+                    <p>The location of this years Electfest is the camping park Kuierpad in Drenthe! With a great variety of camping spots and a number of lakes to have a quick swim, we gurantee to please your adventurous side. The big open space at the festival's stage has a number of stands that offer a big selection of drinks and tasty food!</p>
                 </div>
                 <div class="col-4">
                     <i class="fas fa-ticket-alt gradient"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet condimentum tortor. Sed consectetur, augue posuere tincidunt consequat, mauris arcu luctus mi, quis finibus erat tellus vehicula mauris. Integer ultrices lacinia aliquam. Integer eget orci maximus eros laoreet dictum. Etiam rhoncus porttitor leo. Praesent augue nulla, consectetur ac odio nec.</p>
+                    <p>ElectFest 2019 tickets are now available. A limited amount of door tickets will be available. Please note that we cannot guarantee you a doorsale ticket, they will only be available as long as the stock lasts. Two types of tickets are offered - Regular and a ticket that has a Camp Spot included. For more information, please visit our <a href="tickets.php">Ticket Page</a>.</p>
                 </div>
                 <div class="col-4">
                     <span id="age-restriction" class="fa-stack fa-3x">
                         <strong class="fa-stack-1x calendar-text gradient">18</strong>
                         <i class="fas fa-ban fa-stack-2x kur"></i>
                     </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet condimentum tortor. Sed consectetur, augue posuere tincidunt consequat, mauris arcu luctus mi, quis finibus erat tellus vehicula mauris. Integer ultrices lacinia aliquam. Integer eget orci maximus eros laoreet dictum. Etiam rhoncus porttitor leo. Praesent augue nulla, consectetur ac odio nec.</p>
+                    <p>The festival aims to have a fun atmosphere with many conviniences that enchance the experience, one of which are the offered alcoholic drinks. That's why people under the age of 18 are prohibited from taking part in the event.</p>
                 </div>
             </div>
         </div>
         <!-- Parallax Pattern -->
         <div id="parallax-pattern">
-            <div id="parallax-overlay"></div>
+            <div class="container"><h1>LINE UP</h1></div>
         </div>
         <!-- Info Panels  -->
         <div id="info-panels">
@@ -79,6 +81,7 @@ setcookie("login_redirect", "");
             </div>
         </div>
     </div>
+    <?php include 'includes/footer.inc.php'?>
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
     <script src="scripts/homepage.js"></script>
