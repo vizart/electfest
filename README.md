@@ -1,5 +1,3 @@
-# ElectFest
-------
 ![alt text](https://github.com/plamenlakov/electfest/blob/master/root/source/logo.png)
 
 > In order to run the application you have to host it locally with XAMP and use the Fontys VPN with Cisco Anyconnect, which requires a fontys account, alternatively you can visit the hosted app here http://i406274.hera.fhict.nl/
